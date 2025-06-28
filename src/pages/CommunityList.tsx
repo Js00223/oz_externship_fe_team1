@@ -9,17 +9,17 @@ function CommunityListLayout({ children }: { children: React.ReactNode }) {
   return (
     <div
       className="
-        w-[944px] 
-        min-h-[2445px]
         mx-auto
-        pt-[219px]
-        px-0
-        rounded-none
-        opacity-100
         relative
       "
       style={{
-        left: '488px',
+        width: '1920px', // 전체 너비
+        height: '2873px', // 전체 높이
+        paddingTop: '219px', // 상단 NavBar와의 거리
+        paddingBottom: '209px', // 하단 페이지네이션과의 거리
+        paddingLeft: '488px', // 좌측 간격
+        paddingRight: '488px', // 우측 간격
+        boxSizing: 'border-box', // 패딩 포함 크기 계산
       }}
     >
       {children}
